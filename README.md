@@ -2,8 +2,6 @@
 
 Este archivo README contiene todos los datos tanto de versiones de la tecnologia usada como los comandos para instalar las dependencias y correr la aplicacion.
 
-Things you may want to cover:
-
 ## VERSIONES
 
 * Ruby version : 2.7.2
@@ -14,15 +12,15 @@ Things you may want to cover:
 
 ## CLONAR Y ACCEDER A LAS CARPETAS DE LA APLICACION
 
-*git clone https://github.com/Rodulforo8/Appetite-for-reviews.git
+* git clone https://github.com/Rodulforo8/Appetite-for-reviews.git
 
-*cd .\Appetite-for-reviews\
+* cd .\Appetite-for-reviews\
 
 ## INSTALAR DEPENDENCIAS
 
-*npm install
+* npm install
 
-*bundle install
+* bundle install
 
 # BASE DE DATOS
 
@@ -46,22 +44,22 @@ en caso de tener otras credenciales de postgresql cambiar las respectivas variab
 
 Correr los siguientes comandos en la terminal:
 
-*rails db:create
-*rails db:migrate
-*rails db:seed
+* rails db:create
+* rails db:migrate
+* rails db:seed
 
 ## CORRER LA APLICACION
 
 para inicializar la aplicacion corrrer el siguiente comando en la terminal: 
 
-*rails s
+* rails s
 
 ## ACCEDER A LA APLICACION Y A LA DOCUMENTACION
 
 La ruta para acceder a la aplicacion es:
 
-*http://localhost:3000/
+* http://localhost:3000/
 
 La ruta para acceder a la documentacion de la aplicacion es:
 
-*http://localhost:3000/api-docs/index.html#/
+* http://localhost:3000/api-docs/index.html#/

@@ -1,11 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este archivo README contiene todos los datos tanto de versiones de la tecnologia usada como los comandos para instalar las dependencias y correr la aplicacion.
 
 Things you may want to cover:
 
-* Ruby version
+## VERSIONES
+
+* Ruby version : ruby 2.7.2
+* Rails version : ruby 2.7.2
+* React version : react@17.0.2
+* Postgresql version : 12.2-1
 
 * System dependencies
 

@@ -12,13 +12,13 @@ Things you may want to cover:
 * Postgresql version : 12.2-1
 
 
-# CLONAR Y ACCEDER A LAS CARPETAS DE LA APLICACION
+## CLONAR Y ACCEDER A LAS CARPETAS DE LA APLICACION
 
 *git clone https://github.com/Rodulforo8/Appetite-for-reviews.git
 
 *cd .\Appetite-for-reviews\
 
-# INSTALAR DEPENDENCIAS
+## INSTALAR DEPENDENCIAS
 
 *npm install
 

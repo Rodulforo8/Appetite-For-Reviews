@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '1em',
     marginLeft: '1em',
     width: '100%',
-    
+
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(3),
       width: 'auto',
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     [theme.breakpoints.up('md')]: {
       width: '50ch',
-    
+
     },
   },
   sectionDesktop: {
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const HeaderSearch = () => {
-    
+
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -134,14 +134,14 @@ const HeaderSearch = () => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      
+
     </Menu>
   );
 
   return (
     <div className={classes.grow}>
-      <AppBar style={{ backgroundColor:'#bdb9ac'}} position="static">
-        <Toolbar style={{  margin: 'auto'}}>
+      <AppBar style={{ backgroundColor: '#bdb9ac' }} position="static">
+        <Toolbar style={{ margin: 'auto' }}>
           {/* <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -156,7 +156,7 @@ const HeaderSearch = () => {
             />
           </div> */}
           <div className={classes.grow} />
-     
+
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

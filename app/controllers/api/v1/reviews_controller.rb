@@ -15,7 +15,7 @@ module Api::V1
         private
 
         def review_params
-            params.require(:review).permit(:user, :comment, :restaurant_id)
+            params.require(:review).permit(:user, :comment, :score, :restaurant_id)
         end
     end
 end

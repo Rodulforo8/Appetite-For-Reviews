@@ -50,13 +50,13 @@ Correr los siguientes comandos en la terminal:
 *rails db:migrate
 *rails db:seed
 
-# CORRER LA APLICACION
+## CORRER LA APLICACION
 
 para inicializar la aplicacion corrrer el siguiente comando en la terminal: 
 
 *rails s
 
-# ACCEDER A LA APLICACION Y A LA DOCUMENTACION
+## ACCEDER A LA APLICACION Y A LA DOCUMENTACION
 
 La ruta para acceder a la aplicacion es:
 

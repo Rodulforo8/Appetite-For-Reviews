@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Fade from '@material-ui/core/Fade';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -48,9 +49,9 @@ try{
     const restaurantsGrid = restaurants.map(item => {
         return(
           <Grid key={item.attributes.name} item  xs={12} item sm={3} item md={4} >
-
+    <Fade in>
 <Paper className={classes.paper}><Restaurant className={classes.section}  attributes={item.attributes}/></Paper>
-      
+</Fade>
             </Grid>
         )
     })

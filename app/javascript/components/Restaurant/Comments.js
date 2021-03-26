@@ -11,7 +11,7 @@ import { FormControl } from '@material-ui/core';
 import axios from 'axios'
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
-
+import Fade from '@material-ui/core/Fade';
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
@@ -111,12 +111,14 @@ const Comments = (props) => {
             reviews.map(review => {
                 return (  
                     <Grid key={review.id} style={{margin:"auto"}} item md={8}  item xs={11}>
+                     <Fade in>
                     <Paper elevation={10} className={classes.paper} style={{display:"flex"}} >
                     {review.attributes.user} - dated {moment(review.attributes.created_at).format("YYYY-MM-DD")}
                     <br></br>
                     <br></br>
                     {review.attributes.comment}
                     </Paper>
+                    </Fade>
                    </Grid>
                 )
             })

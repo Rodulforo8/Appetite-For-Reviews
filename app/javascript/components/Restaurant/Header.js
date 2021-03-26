@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { makeStyles } from '@material-ui/core/styles';
-
+import Fade from '@material-ui/core/Fade';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -46,6 +46,7 @@ const Header = (props) =>{
  
     return(
     <div className={classes.root}>
+          <Fade in>
     <Paper elevation={0} className={classes.paper}>
       <Grid container spacing={2}>
         <Grid xs={12} sm={12} md={5} item>
@@ -67,6 +68,7 @@ const Header = (props) =>{
         </Grid>
       </Grid>
     </Paper>
+    </Fade>
   </div>
      
     )

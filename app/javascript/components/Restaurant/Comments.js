@@ -26,12 +26,15 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
       padding: theme.spacing(2),
-    
       color: theme.palette.text.secondary,
       width: '90%',
     },
     button:{
       color: '#bdb9ac'
+    },
+    comment:{
+      fontSize: '15px',
+      color: theme.palette.text.secondary,
     },
     section: {
       height: "100%",
@@ -48,18 +51,16 @@ const Comments = (props) => {
       restaurant_id: props.restaurantId,
     };
 
-
     const [formValues, setFormValues] = useState(defaultValues)
     const [reviews, setReviews] = useState([])
     const [open, setOpen] = React.useState(false);
- 
-    // This are the reviews
-      useEffect( () => {
-            setReviews(props.reviews)
-        }, [reviews.length])
+    const [update , setUpdate] = useState(false)
 
-
-      
+// This are the reviews
+  useEffect( () => {
+       setReviews(props.reviews)
+       setUpdate(true)
+   }, [reviews])
 
 
   const handleClose = (event, reason) => {
@@ -80,15 +81,16 @@ const Comments = (props) => {
   };
 
 
-        const handleSubmit = async(event) => {
+    const handleSubmit = async(event) => {
 
           event.preventDefault();
 
           try{
 
             const createdReview= await axios.post('/api/v1/reviews/', formValues)
-       
 
+            reviews.push(createdReview.data.data)
+           
            setOpen(true);
 
           }catch(error){  

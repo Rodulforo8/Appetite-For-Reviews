@@ -48,7 +48,7 @@ Correr los siguientes comandos en la terminal:
 * rails db:migrate
 * rails db:seed
 
-## CORRER LA APLICACION
+## CORRER EL SERVIDOR
 
 para inicializar la aplicacion corrrer el siguiente comando en la terminal: 
 

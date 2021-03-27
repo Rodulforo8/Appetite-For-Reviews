@@ -1,8 +1,8 @@
 # README
 
-Este archivo README contiene todos los datos tanto de versiones de la tecnologia usada como los comandos para instalar las dependencias y correr la aplicacion.
+This README file contains all the info to install dependencies, database and run de application
 
-## VERSIONES
+# VERSIONS
 
 * Ruby version : 2.7.2
 * Rails version :  6.1.3
@@ -10,25 +10,25 @@ Este archivo README contiene todos los datos tanto de versiones de la tecnologia
 * Postgresql version : 12.2-1
 
 
-## CLONAR Y ACCEDER A LAS CARPETAS DE LA APLICACION
+## CLONE REPOSITORY AND ACCESS FILE
 
 * git clone https://github.com/Rodulforo8/Appetite-for-reviews.git
 
 * cd .\Appetite-for-reviews\
 
-## INSTALAR DEPENDENCIAS
+## DEPENDENCIES INSTALLATION
 
 * npm install
 
 * bundle install
 
-# BASE DE DATOS
+# DATABASE
 
-Creacion de la base de datos para la aplicacion
+Application database creation
 
-## CREDENCIALES
+## CREDENTIALS
 
-ir al archivo \config\database.yml y colocar el siguiente driver por defecto de postgresql
+enter the route  \config\database.yml y colocar el siguiente driver por defecto de postgresql  and replace with the following credentials:
 
 default: &default
   adapter: postgresql
@@ -38,28 +38,28 @@ default: &default
   password: 'postgres'
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-en caso de tener otras credenciales de postgresql cambiar las respectivas variables
+Change variables based on your postgres credentials
 
-## CREAR, MIGRAR Y POPULAR BASE DE DATOS
+## CREATE, MIGRATE AND SEED DATABASE
 
-Correr los siguientes comandos en la terminal:
+Run this commands on the terminal:
 
 * rails db:create
 * rails db:migrate
 * rails db:seed
 
-## CORRER EL SERVIDOR
+## RUN SERVER
 
-para inicializar la aplicacion corrrer el siguiente comando en la terminal: 
+Run the server with the following command on the terminal:
 
 * rails s
 
-## ACCEDER A LA APLICACION Y A LA DOCUMENTACION
+## APPLICATION AND DOCUMENTATION ACCESS
 
-La ruta para acceder a la aplicacion es:
+Application access route:
 
 * http://localhost:3000/
 
-La ruta para acceder a la documentacion de la aplicacion es:
+Swagger application documentation route:
 
 * http://localhost:3000/api-docs/index.html#/

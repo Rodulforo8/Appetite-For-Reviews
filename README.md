@@ -28,7 +28,7 @@ Application database creation
 
 ## CREDENTIALS
 
-enter the route  \config\database.yml y colocar el siguiente driver por defecto de postgresql  and replace with the following credentials:
+enter the route  \config\database.yml   and replace with the following credentials:
 
 default: &default
   adapter: postgresql
